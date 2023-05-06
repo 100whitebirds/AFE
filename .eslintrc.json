@@ -1,0 +1,81 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "react-hooks", "prettier", "jsx-a11y", "jest", "react-hooks", "react-perf"],
+  "rules": {
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "prettier/prettier": "warn",
+    "no-console": "warn",
+    "prefer-const": "warn",
+    "no-undef": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-no-undef": ["error", { "allowGlobals": true }],
+    "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "jsx-a11y/aria-role": "off",
+    "no-underscore-dangle": "off",
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "no-bitwise": ["error", { "allow": ["~"] }],
+    "no-plusplus": "off",
+    "@typescript-eslint/no-floating-promises": ["error"],
+    "no-void": "off",
+    "arrow-body-style": "off",
+    "react/require-default-props": "off",
+    "react/no-unused-prop-types": "off",
+    "arrow-parens": "off",
+    "no-nested-ternary": "off",
+    "@typescript-eslint/default-param-last": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "import/no-named-as-default": "off",
+    "import/default": "off"
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "warn"
+      }
+    }
+  ]
+}
