@@ -1,68 +1,37 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import { Meta, StoryObj } from '@storybook/react';
+import { Theme } from 'app/providers/theme';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Button, ButtonTheme } from './Button';
 
 export default {
   title: 'shared/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
+} as Meta<typeof Button>;
+
+type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
+  args: { children: 'Text' },
+};
+
+export const Clear: Story = {
+  args: {
+    children: 'Text',
+    theme: ButtonTheme.CLEAR,
   },
-} as ComponentMeta<typeof Button>;
-
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  children: 'Text',
 };
 
-export const Clear = Template.bind({});
-Clear.args = {
-  children: 'Text',
-  theme: ButtonTheme.CLEAR,
+export const Outline: Story = {
+  args: {
+    children: 'Text',
+    theme: ButtonTheme.OUTLINE,
+  },
 };
 
-export const ClearInverted = Template.bind({});
-ClearInverted.args = {
-  children: 'Text',
-  theme: ButtonTheme.CLEAR_INVERTED,
-};
-
-export const Outline = Template.bind({});
-Outline.args = {
-  children: 'Text',
-  theme: ButtonTheme.OUTLINE,
-};
-
-export const OutlineDark = Template.bind({});
-OutlineDark.args = {
-  children: 'Text',
-  theme: ButtonTheme.OUTLINE,
-};
-
-export const BackgroundTheme = Template.bind({});
-BackgroundTheme.args = {
-  children: 'Text',
-  theme: ButtonTheme.BACKGROUND,
-};
-
-export const BackgroundInverted = Template.bind({});
-BackgroundInverted.args = {
-  children: 'Text',
-  theme: ButtonTheme.BACKGROUND_INVERTED,
-};
-
-export const Square = Template.bind({});
-Square.args = {
-  children: '>',
-  theme: ButtonTheme.BACKGROUND_INVERTED,
-  square: true,
-};
-
-export const Disabled = Template.bind({});
-Disabled.args = {
-  children: '>',
-  theme: ButtonTheme.OUTLINE,
-  disabled: true,
+export const OutlineDark: Story = {
+  args: {
+    children: 'Text',
+    theme: ButtonTheme.OUTLINE,
+  },
+  decorators: [ThemeDecorator(Theme.DARK)],
 };

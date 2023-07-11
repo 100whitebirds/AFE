@@ -1,14 +1,14 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Theme } from 'app/providers/theme';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
-import { ErrorPage } from './ErrorPage';
+import { Sidebar } from './Sidebar';
 
 export default {
-  title: 'widget/ErrorPage',
-  component: ErrorPage,
-} as Meta<typeof ErrorPage>;
+  title: 'widget/Sidebar',
+  component: Sidebar,
+} as Meta<typeof Sidebar>;
 
-type Story = StoryObj<typeof ErrorPage>;
+type Story = StoryObj<typeof Sidebar>;
 
 export const Light: Story = {
   args: {},

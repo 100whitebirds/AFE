@@ -3,7 +3,7 @@ import { memo, useState } from 'react';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { Button } from 'shared/ui/Button/Button';
-import cls from './Sidebar.module.scss';
+import styles from './Sidebar.module.scss';
 
 interface SidebarProps {
   className?: string;
@@ -19,20 +19,20 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
   return (
     <menu
       data-testid="sidebar"
-      className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
+      className={classNames(styles.Sidebar, { [styles.collapsed]: collapsed }, [
         className,
       ])}
     >
       <Button
         data-testid="sidebar-toggle"
         onClick={onToggle}
-        className={cls.collapseBtn}
+        className={styles.collapseBtn}
       >
         {collapsed ? '>' : '<'}
       </Button>
-      <div className={cls.switchers}>
+      <div className={styles.switchers}>
         <ThemeSwitcher />
-        <LangSwitcher className={cls.lang} />
+        <LangSwitcher className={styles.lang} />
       </div>
     </menu>
   );
