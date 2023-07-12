@@ -4,11 +4,11 @@ type Additional = Array<string | undefined>;
 export const classNames = (
   cls: string,
   mods: Mods = {},
-  additional: Additional = [''],
+  additional: Additional = [],
 ): string =>
   [
     cls,
-    ...additional,
+    ...additional.filter(Boolean),
     ...Object.entries(mods)
       .filter(([className, value]) => Boolean(value))
       .map(([className]) => className),
