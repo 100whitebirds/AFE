@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Staring Node.js ${{ matrix.node-version }}
+      - name: Starting Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
@@ -31,7 +31,7 @@ jobs:
         run: npm run test:unit
         if: always()
       - name: build storybook
-        run: npm run storybook:build
+        run: npm run sb:build
         if: always()
       - name: screenshot testing
         run: npm run test:ui:ci
