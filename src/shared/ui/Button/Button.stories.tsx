@@ -53,14 +53,14 @@ export const OutlineDark: Story = {
 export const Background: Story = {
   args: {
     children: 'Text',
-    theme: ButtonTheme.BACKGROUND,
+    theme: ButtonTheme.PRIMARY,
   },
 };
 
 export const BackgroundInverted: Story = {
   args: {
     children: 'Text',
-    theme: ButtonTheme.BACKGROUND_INVERTED,
+    theme: ButtonTheme.PRIMARY_INVERTED,
   },
 };
 
