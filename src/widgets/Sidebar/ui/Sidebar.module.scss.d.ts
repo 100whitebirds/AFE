@@ -1,0 +1,9 @@
+export declare const button_collapsed: string;
+export declare const collapsed: string;
+export declare const icon: string;
+export declare const item: string;
+export declare const items: string;
+export declare const lang: string;
+export declare const link: string;
+export declare const root: string;
+export declare const switchers: string;

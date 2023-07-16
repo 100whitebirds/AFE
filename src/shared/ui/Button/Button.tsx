@@ -4,17 +4,15 @@ import cls from './Button.module.scss';
 
 export enum ButtonTheme {
   CLEAR = 'clear',
-  CLEAR_INVERTED = 'clear-inverted',
   OUTLINE = 'outline',
-  OUTLINE_RED = 'outline-red',
   PRIMARY = 'primary',
-  PRIMARY_INVERTED = 'primary-inverted',
+  PRIMARY_INVERTED = 'primary_inverted',
 }
 
 export enum ButtonSize {
-  M = 'size-m',
-  L = 'size-l',
-  XL = 'size-xl',
+  M = 'size_m',
+  L = 'size_l',
+  XL = 'size_xl',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -31,7 +29,7 @@ export const Button: FC<ButtonProps> = (props) => {
   const {
     className,
     children,
-    theme = ButtonTheme.OUTLINE,
+    theme = ButtonTheme.CLEAR,
     square,
     disabled,
     fullWidth,
@@ -44,13 +42,13 @@ export const Button: FC<ButtonProps> = (props) => {
     [cls.square]: square,
     [cls[size]]: true,
     [cls.disabled]: disabled,
-    [cls.fullWidth]: fullWidth,
+    [cls.full_width]: fullWidth,
   };
 
   return (
     <button
       type="button"
-      className={classNames(cls.Button, mods, [className])}
+      className={classNames(cls.root, mods, [className])}
       {...otherProps}
     >
       {children}

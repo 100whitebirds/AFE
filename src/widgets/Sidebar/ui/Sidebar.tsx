@@ -25,14 +25,14 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
   return (
     <menu
       data-testid="sidebar"
-      className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
+      className={classNames(cls.root, { [cls.collapsed]: collapsed }, [
         className,
       ])}
     >
       <Button
         data-testid="sidebar-toggle"
         onClick={onToggle}
-        className={cls.collapseBtn}
+        className={cls.button_collapsed}
         theme={ButtonTheme.PRIMARY_INVERTED}
         size={ButtonSize.L}
         square

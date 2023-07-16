@@ -64,5 +64,11 @@ module.exports = {
         'max-len': 'off',
       },
     },
+    {
+      files: ['**/src/**/*.scss.d.ts'],
+      rules: {
+        camelcase: 'off',
+      },
+    },
   ],
 };

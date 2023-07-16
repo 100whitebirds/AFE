@@ -1,0 +1,11 @@
+export declare const clear: string;
+export declare const disabled: string;
+export declare const full_width: string;
+export declare const outline: string;
+export declare const primary: string;
+export declare const primary_inverted: string;
+export declare const root: string;
+export declare const size_l: string;
+export declare const size_m: string;
+export declare const size_xl: string;
+export declare const square: string;
