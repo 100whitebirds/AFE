@@ -46,7 +46,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
           className={cls.item}
         >
           <MainIcon className={cls.icon} />
-          <span className={cls.link}>{t('Главная')}</span>
+          <span className={cls.link}>{t('main')}</span>
         </AppLink>
         <AppLink
           theme={AppLinkTheme.SECONDARY}
@@ -54,7 +54,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
           className={cls.item}
         >
           <AboutIcon className={cls.icon} />
-          <span className={cls.link}>{t('О сайте')}</span>
+          <span className={cls.link}>{t('about')}</span>
         </AppLink>
       </div>
       <div className={cls.switchers}>

@@ -4,7 +4,7 @@ import { StyleDecorator } from './../../src/shared/config/storybook/StyleDecorat
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator';
 import type { Preview } from '@storybook/react';
 
-const preview: Preview = {
+export const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {

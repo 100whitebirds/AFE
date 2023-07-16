@@ -1,4 +1,8 @@
 {
   "main": "Main",
-  "about": "About"
+  "about": "About",
+  "lang": "English",
+  "short_lang": "En",
+  "unexpected_error": "Unexpected error occured",
+  "refresh_page": "Refresh page"
 }
