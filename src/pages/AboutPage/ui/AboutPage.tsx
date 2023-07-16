@@ -1,1 +1,1 @@
-export const AboutPage = () => <div>ABOUT PAGE</div>;
+export const AboutPage = () => {};

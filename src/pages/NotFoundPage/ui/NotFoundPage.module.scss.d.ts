@@ -1,1 +1,1 @@
-export const NotFoundPage: string;
+export const root: string;

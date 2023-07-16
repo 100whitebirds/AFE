@@ -1,4 +1,4 @@
-.Navbar {
+.root {
   width: 100%;
   height: var(--navbar-height);
   background: var(--inverted-bg-color);
@@ -11,6 +11,6 @@
   margin-left: auto;
 }
 
-.mainLink {
+.main_link {
   margin-right: 15px;
 }

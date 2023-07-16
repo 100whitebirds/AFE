@@ -28,10 +28,11 @@ module.exports = {
     'no-unused-vars': 'off',
     'react/require-default-props': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-props-no-spreading': 'warn',
+    'react/jsx-props-no-spreading': ['error', { html: 'ignore' }],
     'react/function-component-definition': 'off',
     'no-shadow': 'off',
     'import/extensions': 'off',
+    'react/jsx-wrap-multilines': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': [
