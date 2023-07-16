@@ -27,6 +27,8 @@ jobs:
         if: always()
       - name: linting css
         run: npm run lint:scss
+      - name: checking classnames validity
+        run: npm run typed-scss
       - name: unit testing
         run: npm run test:unit
         if: always()

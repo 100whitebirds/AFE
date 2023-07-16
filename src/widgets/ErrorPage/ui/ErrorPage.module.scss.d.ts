@@ -1,1 +1,1 @@
-export declare const error_page: string;
+export declare const root: string;

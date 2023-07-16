@@ -1,3 +1,3 @@
-export declare const links: string;
-export declare const main_link: string;
-export declare const navbar: string;
+export const Navbar: string;
+export const links: string;
+export const mainLink: string;

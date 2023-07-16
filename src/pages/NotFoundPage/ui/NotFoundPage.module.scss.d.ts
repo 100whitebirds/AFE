@@ -1,1 +1,1 @@
-export declare const not_found_page: string;
+export const NotFoundPage: string;

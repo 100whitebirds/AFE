@@ -3,6 +3,6 @@
   "rules": {
     "string-quotes": "single",
     "indentation": [2],
-    "selector-class-pattern": "off"
+    "selector-class-pattern": null
   }
 }
