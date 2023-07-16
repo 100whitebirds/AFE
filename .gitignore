@@ -1,5 +1,5 @@
+/build
 node_modules
-build
 .env
 .loki/report.html
 .loki/report.json
