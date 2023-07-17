@@ -10,6 +10,7 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-  // const { className, children, isOpen, onClose } = props;
-  // return <Portal>dsaf</Portal>;
+  const { className, children, isOpen, onClose } = props;
+
+  return <Portal />;
 };

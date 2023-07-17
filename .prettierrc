@@ -6,7 +6,11 @@
   "tabWidth": 2,
   "bracketSpacing": true,
   "endOfLine": "auto",
+  "bracketSameLine": false,
   "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
-  "jsxCurlyNewline": "consistent"
+  "jsxCurlyNewline": "consistent",
+  "trailingComma:": "es5",
+  "singleAttributePerLine": true,
+  "printWidth": 80
 }

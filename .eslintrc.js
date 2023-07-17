@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
+  extends: ['airbnb', 'plugin:react/recommended', 'plugin:i18next/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,23 +13,55 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'i18next',
+    'react-hooks',
+    'prettier',
+  ],
   rules: {
+    'react/display-name': 'off',
     'operator-linebreak': 'off',
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [2, 2],
     'react/jsx-filename-extension': [
       2,
-      { extensions: ['.js', '.jsx', '.tsx'] },
+      {
+        extensions: ['.js', '.jsx', '.tsx'],
+      },
     ],
     'import/no-unresolved': 'off',
-    'object-curly-newline': 'off',
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: {
+          multiline: true,
+          minProperties: 1,
+        },
+        ObjectPattern: {
+          multiline: true,
+        },
+        ImportDeclaration: {
+          multiline: true,
+        },
+        ExportDeclaration: {
+          multiline: true,
+          minProperties: 3,
+        },
+      },
+    ],
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'off',
     'react/require-default-props': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-props-no-spreading': ['error', { html: 'ignore' }],
+    'react/jsx-props-no-spreading': [
+      'error',
+      {
+        html: 'ignore',
+      },
+    ],
     'react/function-component-definition': 'off',
     'no-shadow': 'off',
     'import/extensions': 'off',
@@ -43,7 +75,13 @@ module.exports = {
         ignoreAttribute: ['data-testid', 'to'],
       },
     ],
-    'max-len': ['error', { ignoreComments: true, code: 120 }],
+    'max-len': [
+      'error',
+      {
+        ignoreComments: true,
+        code: 120,
+      },
+    ],
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks

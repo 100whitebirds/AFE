@@ -11,7 +11,9 @@ export default {
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
-  args: { children: 'Text' },
+  args: {
+    children: 'Text',
+  },
 };
 
 export const Clear: Story = {
