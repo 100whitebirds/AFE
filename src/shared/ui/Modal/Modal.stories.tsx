@@ -1,4 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
+import { Theme } from 'app/providers/theme';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Modal } from './Modal';
 
 export default {
@@ -22,4 +24,5 @@ export const Dark: Story = {
     children:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ',
   },
+  decorators: [ThemeDecorator(Theme.DARK)],
 };

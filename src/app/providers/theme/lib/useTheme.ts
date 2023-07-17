@@ -18,10 +18,7 @@ export function useTheme(): UseThemeResult {
   };
 
   return {
-    theme:
-      theme ??
-      (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) ??
-      Theme.LIGHT,
+    theme: theme ?? Theme.LIGHT,
     toggleTheme,
   };
 }
