@@ -6,5 +6,7 @@
   "unexpected_error": "Unexpected error occured",
   "refresh_page": "Refresh page",
   "page_not_found": "Page not found",
-  "loading": "Loading"
+  "loading": "Loading",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }

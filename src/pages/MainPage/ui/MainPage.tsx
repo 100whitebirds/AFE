@@ -1,1 +1,7 @@
-export const MainPage = () => <div />;
+import { Counter } from 'entities/Counter';
+
+export const MainPage = () => (
+  <div>
+    <Counter />
+  </div>
+);

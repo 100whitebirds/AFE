@@ -6,5 +6,7 @@
   "unexpected_error": "Произошла непредвиденная ошибка",
   "refresh_page": "Обновить страницу",
   "page_not_found": "Страница не найдена",
-  "loading": "Загрузка"
+  "loading": "Загрузка",
+  "increment": "Увеличить",
+  "decrement": "Уменьшить"
 }
