@@ -29,6 +29,7 @@ export const Outline: Story = {
     theme: ButtonTheme.OUTLINE,
   },
 };
+
 export const OutlineSizeL: Story = {
   args: {
     children: 'Text',
