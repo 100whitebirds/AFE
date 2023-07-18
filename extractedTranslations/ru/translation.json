@@ -1,8 +1,11 @@
 {
   "about": "about",
   "decrement": "decrement",
+  "enter_password": "enter_password",
+  "enter_username": "enter_username",
   "increment": "increment",
   "loading": "loading",
+  "login": "login",
   "main": "main",
   "page_not_found": "page_not_found"
 }

@@ -21,6 +21,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'arrow-body-style': 'off',
     'react/display-name': 'off',
     'operator-linebreak': 'off',
     'react/jsx-indent': [2, 2],

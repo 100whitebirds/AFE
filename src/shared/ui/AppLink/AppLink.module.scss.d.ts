@@ -1,4 +1,4 @@
-export const root: string;
-export const primary: string;
-export const secondary: string;
-export const red: string;
+export declare const primary: string;
+export declare const red: string;
+export declare const root: string;
+export declare const secondary: string;

@@ -19,7 +19,7 @@
     "test:ui:html": "npx reg-cli --from .loki/report.json --report .loki/report.html",
     "test:ui:report": "npm run test:ui:json && npm run test:ui:html",
     "typed-scss": "typed-scss-modules src -n snake",
-    "typed-scss-watch": "typed-scss-modules src --watch -n snake",
+    "typed-scss:watch": "typed-scss-modules src --watch -n snake",
     "sb": "storybook dev -p 6006 -c ./config/storybook",
     "sb:build": "storybook build -c ./config/storybook"
   },

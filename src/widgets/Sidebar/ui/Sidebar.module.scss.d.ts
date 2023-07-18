@@ -1,9 +1,9 @@
-export const root: string;
-export const switchers: string;
-export const lang: string;
-export const button_collapsed: string;
-export const items: string;
-export const item: string;
-export const link: string;
-export const icon: string;
-export const collapsed: string;
+export declare const button_collapsed: string;
+export declare const collapsed: string;
+export declare const icon: string;
+export declare const item: string;
+export declare const items: string;
+export declare const lang: string;
+export declare const link: string;
+export declare const root: string;
+export declare const switchers: string;

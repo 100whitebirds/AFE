@@ -8,5 +8,8 @@
   "page_not_found": "Страница не найдена",
   "loading": "Загрузка",
   "increment": "Увеличить",
-  "decrement": "Уменьшить"
+  "decrement": "Уменьшить",
+  "enter_username": "Введите username",
+  "enter_password": "Введите пароль",
+  "login": "Войти"
 }

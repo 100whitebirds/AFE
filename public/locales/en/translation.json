@@ -8,5 +8,8 @@
   "page_not_found": "Page not found",
   "loading": "Loading",
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "enter_username": "Enter username",
+  "enter_password": "Enter password",
+  "login": "Login"
 }
