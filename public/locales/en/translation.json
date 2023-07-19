@@ -11,5 +11,8 @@
   "decrement": "Decrement",
   "enter_username": "Enter username",
   "enter_password": "Enter password",
-  "login": "Login"
+  "login": "Login",
+  "logout": "Logout",
+  "login_form": "Login form",
+  "wrong_login_or_password": "Wrong login or password"
 }

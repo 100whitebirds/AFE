@@ -2,6 +2,7 @@ import { Theme } from '../../src/app/providers/theme';
 import { ThemeDecorator } from './../../src/shared/config/storybook/ThemeDecorator';
 import { StyleDecorator } from './../../src/shared/config/storybook/StyleDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator';
+import { TranslationDecorator } from '../../src/shared/config/storybook/TranslationDecorator';
 import type { Preview } from '@storybook/react';
 
 export const preview: Preview = {
@@ -17,5 +18,5 @@ export const preview: Preview = {
 };
 
 export default {
-  decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator],
+  decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator, TranslationDecorator],
 };

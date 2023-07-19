@@ -1,11 +1,21 @@
 {
+  "": "",
   "about": "about",
   "decrement": "decrement",
   "enter_password": "enter_password",
   "enter_username": "enter_username",
   "increment": "increment",
+  "lo": "lo",
   "loading": "loading",
   "login": "login",
+  "login_form": "login_form",
+  "logout": "logout",
   "main": "main",
-  "page_not_found": "page_not_found"
+  "page_not_found": "page_not_found",
+  "wron": "wron",
+  "wrong_": "wrong_",
+  "wrong_login_or_password": "wrong_login_or_password",
+  "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
+  "Выйти": "Выйти",
+  "Форма авторизации": "Форма авторизации"
 }
