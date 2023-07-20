@@ -16,6 +16,7 @@ export const Primary: Story = {
       loginForm: {
         username: '123',
         password: 'asd',
+        isLoading: false,
       },
     }),
   ],
@@ -29,6 +30,7 @@ export const WithError: Story = {
         username: '123',
         password: 'asd',
         error: 'ERROR',
+        isLoading: false,
       },
     }),
   ],
@@ -39,6 +41,8 @@ export const Loading: Story = {
   decorators: [
     StoreDecorator({
       loginForm: {
+        username: '',
+        password: '',
         isLoading: true,
       },
     }),
