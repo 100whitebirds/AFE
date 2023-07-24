@@ -14,5 +14,6 @@
   "login": "Войти",
   "logout": "Выйти",
   "login_form": "Форма авторизации",
-  "wrong_login_or_password": "Вы ввели неверный логин или пароль"
+  "wrong_login_or_password": "Вы ввели неверный логин или пароль",
+  "profile_page": "Профиль"
 }

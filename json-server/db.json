@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "reol" }
+  "profile": {
+    "first": "Elis",
+    "lastname": "Fedoseev",
+    "age": 23,
+    "currency": "RUB",
+    "country": "Kazakhstan",
+    "city": "Almaty",
+    "username": "admin",
+    "avatar": "https://preview.redd.it/oe542yihq8221.png?width=640&crop=smart&auto=webp&s=56bbfb8f448ce34b58e0dc3dff5c3ed7522a2605"
+  }
 }

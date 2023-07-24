@@ -12,6 +12,7 @@
   "logout": "logout",
   "main": "main",
   "page_not_found": "page_not_found",
+  "profile_page": "profile_page",
   "wron": "wron",
   "wrong_": "wrong_",
   "wrong_login_or_password": "wrong_login_or_password",
