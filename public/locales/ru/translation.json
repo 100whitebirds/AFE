@@ -15,5 +15,8 @@
   "logout": "Выйти",
   "login_form": "Форма авторизации",
   "wrong_login_or_password": "Вы ввели неверный логин или пароль",
-  "profile_page": "Профиль"
+  "profile": "Профиль",
+  "edit": "Редактировать",
+  "your_name": "Ваше имя",
+  "your_surname": "Ваша фамилия"
 }

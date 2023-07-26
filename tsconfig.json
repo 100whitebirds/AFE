@@ -9,6 +9,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "strict": true,
     "paths": {
       "*": ["./src/*"]
     },
@@ -18,7 +19,7 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS",
+      "module": "CommonJS"
     }
   },
   "include": [

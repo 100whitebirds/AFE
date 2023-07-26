@@ -15,5 +15,8 @@
   "logout": "Logout",
   "login_form": "Login form",
   "wrong_login_or_password": "Wrong login or password",
-  "profile_page": "Profile page"
+  "profile": "Profile",
+  "edit": "Edit",
+  "your_name": "Your name",
+  "your_surname": "Your surname"
 }
