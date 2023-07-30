@@ -3,6 +3,7 @@ export declare const clear_inverted: string;
 export declare const disabled: string;
 export declare const full_width: string;
 export declare const outline: string;
+export declare const outline_red: string;
 export declare const primary: string;
 export declare const primary_inverted: string;
 export declare const root: string;

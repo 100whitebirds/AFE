@@ -9,7 +9,6 @@
   "loading": "Загрузка",
   "increment": "Увеличить",
   "decrement": "Уменьшить",
-  "enter_username": "Введите username",
   "enter_password": "Введите пароль",
   "login": "Войти",
   "logout": "Выйти",
@@ -17,6 +16,16 @@
   "wrong_login_or_password": "Вы ввели неверный логин или пароль",
   "profile": "Профиль",
   "edit": "Редактировать",
+  "cancel": "Отменить",
+  "save": "Сохранить",
   "your_name": "Ваше имя",
-  "your_surname": "Ваша фамилия"
+  "your_surname": "Ваша фамилия",
+  "your_age": "Ваш возраст",
+  "city": "Город",
+  "profile_loading_error": "Произошла ошибка при загрузке профиля",
+  "try_refresh_page": "Попробуйте обновить страницу",
+  "enter_username": "Введите имя пользователя",
+  "enter_avatar_link": "Введите ссылку на аватар",
+  "select_country": "Выберите страну",
+  "select_currency": "Укажите валюту"
 }
