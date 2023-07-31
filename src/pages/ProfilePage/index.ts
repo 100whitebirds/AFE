@@ -1,1 +1,1 @@
-export { ProfilePage } from './ui/ProfilePage';
+export { default } from './ui/ProfilePage';

@@ -1,3 +1,5 @@
-export const MainPage = () => {
+const MainPage = () => {
   return <div />;
 };
+
+export default MainPage;

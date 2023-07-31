@@ -21,6 +21,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'no-restricted-exports': 'off',
     'arrow-body-style': 'off',
     'react/display-name': 'off',
     'operator-linebreak': 'off',
