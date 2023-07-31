@@ -1,9 +1,10 @@
 import { Suspense, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { userActions } from 'entities/User';
+import { getUserMounted, userActions } from 'entities/User';
 import { useTypedDispatch } from 'shared/lib/hooks/useTypedDispatch';
 import { useTheme } from './providers/theme';
 import './styles/index.scss';
@@ -11,6 +12,7 @@ import './styles/index.scss';
 function App() {
   const { theme } = useTheme();
   const dispatch = useTypedDispatch();
+  const mounted = useSelector(getUserMounted);
 
   useEffect(() => {
     dispatch(userActions.initAuthData());
@@ -22,7 +24,7 @@ function App() {
         <Navbar />
         <div className="content_page">
           <Sidebar />
-          <AppRouter />
+          {mounted && <AppRouter />}
         </div>
       </Suspense>
     </div>
