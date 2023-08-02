@@ -1,6 +1,8 @@
 {
   "": "",
   "about": "",
+  "article_not": "article_not",
+  "article_not_found": "article_not_found",
   "cancel": "cancel",
   "city": "city",
   "decrement": "",
@@ -8,6 +10,7 @@
   "enter_avatar_link": "enter_avatar_link",
   "enter_password": "enter_password",
   "enter_username": "enter_username",
+  "error_occured_while_loading_article": "error_occured_while_loading_article",
   "increment": "",
   "lo": "lo",
   "loading": "loading",
@@ -32,6 +35,7 @@
   "your_surname": "your_surname",
   "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
   "Выйти": "Выйти",
+  "Статья не найдена": "Статья не найдена",
   "Страница не найдена": "",
   "Форма авторизации": "Форма авторизации"
 }

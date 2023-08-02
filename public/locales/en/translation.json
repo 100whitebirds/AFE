@@ -27,5 +27,8 @@
   "enter_password": "Enter password",
   "enter_avatar_link": "Enter avatar link",
   "select_country": "Select country",
-  "select_currency": "Select currency"
+  "select_currency": "Select currency",
+  "articles": "Articles",
+  "error_occured_while_loading_article": "Error occured while loading an article",
+  "article_not_found": "Article not found"
 }

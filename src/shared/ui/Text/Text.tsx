@@ -13,20 +13,34 @@ export enum TextAlign {
   CENTER = 'center',
 }
 
+export enum TextSize {
+  M = 'size_m',
+  L = 'size_l',
+}
+
 interface TextProps {
   className?: string;
   title?: string;
   text?: string;
   align?: TextAlign;
   isError?: boolean;
+  size?: TextSize;
 }
 
 export const Text = memo((props: TextProps) => {
-  const { className, text, title, isError, align = TextAlign.LEFT } = props;
+  const {
+    className,
+    text,
+    title,
+    isError,
+    align = TextAlign.LEFT,
+    size = TextSize.M,
+  } = props;
 
   const mods: Mods = {
     [cls.error]: isError,
     [cls[align]]: true,
+    [cls[size]]: true,
   };
 
   return (

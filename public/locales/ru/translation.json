@@ -27,5 +27,8 @@
   "enter_username": "Введите имя пользователя",
   "enter_avatar_link": "Введите ссылку на аватар",
   "select_country": "Выберите страну",
-  "select_currency": "Укажите валюту"
+  "select_currency": "Укажите валюту",
+  "articles": "Статьи",
+  "error_occured_while_loading_article": "Произошла ошибка при загрузке статьи.",
+  "article_not_found": "Статья не найдена"
 }
