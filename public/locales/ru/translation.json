@@ -30,5 +30,7 @@
   "select_currency": "Укажите валюту",
   "articles": "Статьи",
   "error_occured_while_loading_article": "Произошла ошибка при загрузке статьи.",
-  "article_not_found": "Статья не найдена"
+  "article_not_found": "Статья не найдена",
+  "no_comments": "Комментарии отсутствуют",
+  "comments": "Комментарии"
 }

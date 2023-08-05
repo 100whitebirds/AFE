@@ -15,7 +15,7 @@ export const ArticleTextBlock = memo((props: ArticleTextBlockProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className={classNames(cls.ArticleTextBlock, {}, [className])}>
+    <div className={classNames('', {}, [className])}>
       {block.title && (
         <Text
           title={block.title}

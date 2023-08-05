@@ -13,9 +13,18 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "role": "ADMIN",
+      "avatar": "https://preview.redd.it/oe542yihq8221.png?width=640&crop=smart&auto=webp&s=56bbfb8f448ce34b58e0dc3dff5c3ed7522a2605"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "123",
+      "role": "USER",
+      "avatar": "https://preview.redd.it/oe542yihq8221.png?width=640&crop=smart&auto=webp&s=56bbfb8f448ce34b58e0dc3dff5c3ed7522a2605"
     }
   ],
   "profile": {
