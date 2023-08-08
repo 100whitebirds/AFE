@@ -32,5 +32,12 @@
   "error_occured_while_loading_article": "Error occured while loading an article",
   "article_not_found": "Article not found",
   "no_comments": "No comments",
-  "comments": "Comments"
+  "comments": "Comments",
+  "server_error_while_saving": "Server error while saving",
+  "incorrect_region": "Incorrect region",
+  "no_data_provided": "No data provided",
+  "name_required": "Name required",
+  "incorrect_age": "Incorrect age",
+  "enter_comment_text": "Enter comment text",
+  "send": "Send"
 }

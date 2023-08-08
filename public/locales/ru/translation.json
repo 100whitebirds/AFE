@@ -32,5 +32,12 @@
   "error_occured_while_loading_article": "Произошла ошибка при загрузке статьи.",
   "article_not_found": "Статья не найдена",
   "no_comments": "Комментарии отсутствуют",
-  "comments": "Комментарии"
+  "comments": "Комментарии",
+  "server_error_while_saving": "Серверная ошибка при сохранении",
+  "incorrect_region": "Некорректный регион",
+  "no_data_provided": "Данные не указаны",
+  "name_required": "Имя и фамилия обязательны",
+  "incorrect_age": "Некорректный возраст",
+  "enter_comment_text": "Введите текст комментария",
+  "send": "Отправить"
 }

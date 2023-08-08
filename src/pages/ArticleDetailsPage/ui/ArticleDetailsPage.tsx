@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
+import { lazy, memo, useCallback } from 'react';
 import { ArticleDetails } from 'entities/Article';
 import { useParams } from 'react-router-dom';
 import { useTypedDispatch } from 'shared/lib/hooks/useTypedDispatch';
@@ -19,6 +19,9 @@ import {
 import { getArticleCommentsIsLoading } from '../model/selectors/comments';
 import { fetchCommentsByArticleId } from '../model/services/fetchCommentsByArticleId';
 import cls from './ArticleDetailsPage.module.scss';
+import { addCommentForArticle } from '../model/services/addCommentForArticle';
+
+const AddCommentForm = lazy(() => import('features/AddCommentForm'));
 
 interface ArticleDetailsPageProps {
   className?: string;
@@ -35,6 +38,13 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
   const dispatch = useTypedDispatch();
   const comments = useSelector(getArticleComments.selectAll);
   const commentsIsLoading = useSelector(getArticleCommentsIsLoading);
+
+  const onSendComment = useCallback(
+    (text: string) => {
+      dispatch(addCommentForArticle(text));
+    },
+    [dispatch],
+  );
 
   useInitialEffect(() => {
     dispatch(fetchCommentsByArticleId(id));
@@ -59,6 +69,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
           className={cls.comment_title}
           title={t('comments')}
         />
+        <AddCommentForm onSendComment={onSendComment} />
         <CommentList
           isLoading={commentsIsLoading}
           comments={comments}
