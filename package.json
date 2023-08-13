@@ -97,6 +97,7 @@
     "webpack-shell-plugin": "^0.5.0"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.3",
     "@reduxjs/toolkit": "^1.8.0",
     "axios": "^0.26.1",
     "i18next": "^22.5.1",
