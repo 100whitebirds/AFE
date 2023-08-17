@@ -3,7 +3,6 @@ import webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import StatoscopeWebpackPlugin  from '@statoscope/webpack-plugin'
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
 export function buildPlugins({
@@ -34,11 +33,6 @@ export function buildPlugins({
     plugins.push(new StatoscopeWebpackPlugin({
       open: 'file',
     }));
-    plugins.push(
-      new BundleAnalyzerPlugin({
-        openAnalyzer: false,
-      }),
-    );
   }
 
   return plugins;

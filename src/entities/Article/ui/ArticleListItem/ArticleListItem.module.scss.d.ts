@@ -1,0 +1,14 @@
+export declare const big: string;
+export declare const date: string;
+export declare const footer: string;
+export declare const header: string;
+export declare const image_wrapper: string;
+export declare const img: string;
+export declare const info_wrapper: string;
+export declare const root: string;
+export declare const small: string;
+export declare const text_block: string;
+export declare const title: string;
+export declare const types: string;
+export declare const username: string;
+export declare const views: string;

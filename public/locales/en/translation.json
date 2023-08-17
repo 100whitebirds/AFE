@@ -39,5 +39,6 @@
   "name_required": "Name required",
   "incorrect_age": "Incorrect age",
   "enter_comment_text": "Enter comment text",
-  "send": "Send"
+  "send": "Send",
+  "read_more": "Read more..."
 }
