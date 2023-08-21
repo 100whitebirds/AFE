@@ -1,5 +1,4 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import {
   ArticleList,
@@ -11,7 +10,7 @@ import {
   ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useTypedDispatch } from 'shared/lib/hooks/useTypedDispatch';
 import { fetchArticlesList } from '../model/services/fetchArticlesList/fetchArticlesList';
 import {
@@ -21,7 +20,6 @@ import {
 } from '../model/slices/articlesPageSlice';
 import cls from './ArticlesPage.module.scss';
 import {
-  getArticlesPageError,
   getArticlesPageIsLoading,
   getArticlesPageView,
 } from '../model/selectors/articlesPageSelectors';
@@ -36,12 +34,10 @@ const reducers: ReducersList = {
 
 const ArticlesPage = (props: ArticlesPageProps) => {
   const { className } = props;
-  const { t } = useTranslation();
   const dispatch = useTypedDispatch();
   const articles = useSelector(getArticles.selectAll);
   const isLoading = useSelector(getArticlesPageIsLoading);
   const view = useSelector(getArticlesPageView);
-  const error = useSelector(getArticlesPageError);
 
   const onChangeView = useCallback(
     (view: ArticleView) => {

@@ -5,7 +5,6 @@ export declare const header: string;
 export declare const image_wrapper: string;
 export declare const img: string;
 export declare const info_wrapper: string;
-export declare const root: string;
 export declare const small: string;
 export declare const text_block: string;
 export declare const title: string;
