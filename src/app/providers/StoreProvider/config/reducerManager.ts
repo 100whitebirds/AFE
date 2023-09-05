@@ -45,6 +45,7 @@ export const createReducerManager = (
       }
       delete reducers[key];
       keysToRemove.push(key);
+
       combinedReducer = combineReducers(reducers);
     },
   };

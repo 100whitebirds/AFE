@@ -19,12 +19,12 @@ export const CommentList = memo((props: CommentListProps) => {
   return (
     <div className={classNames(cls.root, {}, [className])}>
       {comments?.length ? (
-        comments.map((comment, index) => (
+        comments.map((comment) => (
           <CommentCard
             isLoading={isLoading}
             className={cls.root}
             comment={comment}
-            key={index}
+            key={comment.id}
           />
         ))
       ) : (
